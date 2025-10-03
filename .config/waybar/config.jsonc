@@ -1,7 +1,8 @@
 {
     "layer": "top",
-    "modules-left": ["hyprland/workspaces", "hyprland/window"],
-    "modules-right": ["battery", "clock","network"],
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center":["hyprland/window"],
+    "modules-right": ["pulseaudio","battery", "clock","network"],
     "battery": {
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""]
@@ -10,14 +11,33 @@
         "format-alt": "{:%a, %d. %b  %H:%M}"
     },
     "network": {
-  "interface": "wlp0s20f3",    // replace with your Wi-Fi interface
-  "format-wifi": "  {essid} ({signalStrength}%)",
-  "format-ethernet": "󰈀  {ifname}: {ipaddr}",
-  "format-disconnected": "󰖪  Disconnected",
-  "tooltip-format": "{ifname} via {gwaddr}\nSignal: {signalStrength}%",
-  "max-length": 50
-},
-
+        "interface": "wlp0s20f3",    
+        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-ethernet": "󰈀  {ifname}: {ipaddr}",
+        "format-disconnected": "󰖪  Disconnected",
+        "tooltip-format": "{ifname} via {gwaddr}\nSignal: {signalStrength}%",
+        "max-length": 50
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon}   {volume}% {format_source}",
+        "format-bluetooth": "{icon}   {volume}%  {format_source}",
+        "format-bluetooth-muted": "{icon}     {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "  {volume}%",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol",
+        "scroll-step": 2
+    },
     "hyprland/workspaces": {
 	"format": "{name}",
 	"format-icons": {
@@ -35,11 +55,7 @@
        }
 },
 "hyprland/window": {
-    "format": "👉 {}",
-    "rewrite": {
-        "(.*) — Mozilla Firefox": "🌎 $1",
-        "(.*) - fish": "> [$1]"
-    },
-    "separate-outputs": true
+    "format": "  {}",
+	"max-length": 90
 }
 }

@@ -1,0 +1,74 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "display": {
+    //"separator": ": ",     // Separator between keys and values
+    "color": {
+        "keys": "blue",    // Key color
+        "title": "red"     // Title color
+    },
+    "key": {
+        "width": 16,       // Aligns keys to this width
+        "type": "string"   // string, icon, both, or none
+    },
+    "bar": {
+        "width":10,       // Width of percentage bars
+        "char": {
+            "elapsed": "■", // Character for elapsed portion
+            "total": "-",    // Character for total portion
+        },
+    },
+    "percent": {
+        "type": 9,         // 1=number, 2=bar, 3=both, 9=colored number
+        "color": {
+            "green": "green",
+            "yellow": "light_yellow",
+            "red": "light_red"
+        }
+    }
+},
+"logo": {
+    "type": "auto",
+    "source": "/home/light/Downloads/cropped_circle_image(1).png",
+    "height": 10,
+    "padding": {
+    		"top": 3
+    },
+    //"preserveAspectRatio": true
+},
+  "modules": [
+    "title",
+    //"separator",
+    "break",
+    "os",
+    "host",
+    "break",
+    //"kernel",
+    "uptime",
+    "packages",
+    "shell",
+    //"display",
+    "break",
+    "de",
+    "wm",
+    //"wmtheme",
+    //"theme",
+    //"icons",
+    //"font",
+    //"cursor",
+    "break",
+    "terminal",
+    "terminalfont",
+    "break",
+    "cpu",
+    "gpu",
+    "memory",
+    //"swap",
+    "disk",
+    //"localip",
+    //"battery",
+    //"poweradapter",
+    //"locale",
+    //"break",
+    //"colors"
+  ]
+}

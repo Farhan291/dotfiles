@@ -1,7 +1,8 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
+    /*font-family: Roboto, Helvetica, Arial, sans-serif;*/ 
+    font-family: "JetBrains Mono Nerd Font";
     font-size: 13px;
     min-height: 0;
 }
@@ -21,32 +22,31 @@ tooltip label {
 }
 
 #workspaces button {
-    padding: 0 5px;
+    padding: 7px 5px;
     background: transparent;
     color: white;
     border-bottom: 3px solid transparent;
 }
 
-#workspaces button.focused {
+#workspaces button.active {
     background: #64727D;
     border-bottom: 3px solid white;
 }
 
-#mode, #clock, #battery {
-    padding: 0 10px;
+#mode, #clock, #battery, #network, #pulseaudio {
+    padding: 7px 10px;
 }
 
 #mode {
     background: #64727D;
     border-bottom: 3px solid white;
 }
-
 #clock {
     background-color: #64727D;
 }
 
 #battery {
-    background-color: #ffffff;
+    background-color: #27F5A3;
     color: black;
 }
 
@@ -54,7 +54,9 @@ tooltip label {
     color: white;
     background-color: #26A65B;
 }
-
+#network{
+    background-color: #A627F5;
+}
 @keyframes blink {
     to {
         background-color: #ffffff;
