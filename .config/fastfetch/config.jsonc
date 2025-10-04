@@ -28,7 +28,7 @@
 },
 "logo": {
     "type": "auto",
-    "source": "/home/light/Downloads/cropped_circle_image(1).png",
+    "source": "~/dotfiles/.assets/wallpapers/reze_circle.png",
     "height": 10,
     "padding": {
     		"top": 3
