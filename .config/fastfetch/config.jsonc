@@ -1,74 +1,69 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
   "display": {
-    //"separator": ": ",     // Separator between keys and values
     "color": {
-        "keys": "blue",    // Key color
-        "title": "red"     // Title color
+      "keys": "cyan",  
+      "title": "cyan"
     },
     "key": {
-        "width": 16,       // Aligns keys to this width
-        "type": "string"   // string, icon, both, or none
+      "type": "string"
     },
     "bar": {
-        "width":10,       // Width of percentage bars
-        "char": {
-            "elapsed": "■", // Character for elapsed portion
-            "total": "-",    // Character for total portion
-        },
+      "width": 10,
+      "char": {
+        "elapsed": "■",
+        "total": "-"
+      }
     },
     "percent": {
-        "type": 9,         // 1=number, 2=bar, 3=both, 9=colored number
-        "color": {
-            "green": "green",
-            "yellow": "light_yellow",
-            "red": "light_red"
-        }
+      "type": 9,
+      "color": {
+        "green": "green",
+        "yellow": "light_yellow",
+        "red": "light_red"
+      }
     }
-},
-"logo": {
+  },
+
+  "logo": {
     "type": "auto",
     "source": "~/dotfiles/.assets/wallpapers/reze_circle.png",
     "height": 10,
     "padding": {
-    		"top": 3
-    },
-    //"preserveAspectRatio": true
-},
+      "top": 3
+    }
+  },
+
   "modules": [
     "title",
-    //"separator",
     "break",
-    "os",
-    "host",
+
+    { "type": "os",      "keyColor": "cyan", "valueColor": "light_blue" },
+    { "type": "host",    "keyColor": "cyan", "valueColor": "blue" },
+    { "type": "kernel",  "keyColor": "cyan", "valueColor": "green" },
+    { "type": "uptime",  "keyColor": "cyan", "valueColor": "yellow" },
+    { "type": "packages","keyColor": "cyan", "valueColor": "magenta" },
+    { "type": "shell",   "keyColor": "cyan", "valueColor": "light_cyan" },
+
     "break",
-    //"kernel",
-    "uptime",
-    "packages",
-    "shell",
-    //"display",
+
+    { "type": "de",      "keyColor": "cyan", "valueColor": "light_magenta" },
+    { "type": "wm",      "keyColor": "cyan", "valueColor": "light_green" },
+    { "type": "terminal","keyColor": "cyan", "valueColor": "light_red" },
+    { "type": "terminalfont", "keyColor": "cyan", "valueColor": "light_yellow" },
+
     "break",
-    "de",
-    "wm",
-    //"wmtheme",
-    //"theme",
-    //"icons",
-    //"font",
-    //"cursor",
+
+    { "type": "cpu",     "keyColor": "cyan", "valueColor": "red" },
+    { "type": "gpu",     "keyColor": "cyan", "valueColor": "light_green" },
+    { "type": "memory",  "keyColor": "cyan", "valueColor": "magenta" },
+    { "type": "disk",    "keyColor": "cyan", "valueColor": "light_blue" },
+
     "break",
-    "terminal",
-    "terminalfont",
-    "break",
-    "cpu",
-    "gpu",
-    "memory",
-    //"swap",
-    "disk",
-    //"localip",
-    //"battery",
-    //"poweradapter",
-    //"locale",
-    //"break",
-    //"colors"
+
+    { "type": "localip", "keyColor": "cyan", "valueColor": "light_cyan" },
+    { "type": "locale",  "keyColor": "cyan", "valueColor": "light_magenta" }
   ]
 }
+
