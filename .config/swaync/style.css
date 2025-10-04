@@ -1,0 +1,169 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.notification-row {
+  outline: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.notification {
+  background: rgba(30, 32, 48, 0.95);
+  border-radius: 8px;
+  margin: 8px;
+  padding: 0;
+  border: 2px solid #7dcfff;
+}
+
+.notification-content {
+  background: transparent;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.close-button {
+  background: rgba(125, 220, 255, 0.2);
+  color: #7dcfff;
+  text-shadow: none;
+  padding: 0;
+  border-radius: 6px;
+  margin: 6px;
+  border: none;
+}
+
+.close-button:hover {
+  background: #7dcfff;
+  color: #1e2030;
+}
+
+.notification-default-action {
+  margin: 0;
+  padding: 0;
+  border-radius: 8px;
+}
+
+.summary {
+  font-size: 15px;
+  font-weight: bold;
+  color: #c0caf5;
+  text-shadow: none;
+}
+
+.time {
+  font-size: 12px;
+  font-weight: normal;
+  color: #7dcfff;
+  text-shadow: none;
+}
+
+.body {
+  font-size: 13px;
+  font-weight: normal;
+  color: #e0def4;
+  text-shadow: none;
+}
+
+.control-center {
+  background: rgba(30, 32, 48, 0.95);
+  border: 2px solid #7dcfff;
+  border-radius: 12px;
+  margin: 10px;
+  box-shadow: 0 0 20px rgba(125, 220, 255, 0.3);
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+.control-center-list-placeholder {
+  opacity: 0.5;
+  color: #c0caf5;
+}
+
+.widget-title {
+  background: rgba(125, 220, 255, 0.1);
+  color: #7dcfff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.widget-title > button {
+  background: rgba(187, 154, 247, 0.2);
+  color: #bb9af7;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.widget-title > button:hover {
+  background: #bb9af7;
+  color: #1e2030;
+}
+
+.widget-dnd {
+  background: rgba(125, 220, 255, 0.1);
+  color: #7dcfff;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.widget-dnd > switch {
+  background: rgba(187, 154, 247, 0.3);
+  border-radius: 20px;
+  border: none;
+}
+
+.widget-dnd > switch:checked {
+  background: #bb9af7;
+}
+
+.widget-dnd > switch slider {
+  background: #7dcfff;
+  border-radius: 50%;
+}
+
+.widget-mpris {
+  background: rgba(45, 38, 64, 0.9);
+  border: 2px solid #bb9af7;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  color: #e0def4;
+}
+
+.widget-mpris-player {
+  background: transparent;
+  padding: 8px;
+}
+
+.widget-mpris-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #c0caf5;
+}
+
+.widget-mpris-subtitle {
+  font-size: 12px;
+  color: #7dcfff;
+}
+
+/* Urgency levels */
+.notification.critical {
+  border: 2px solid #ff757f;
+}
+
+.notification.low {
+  border: 2px solid #bb9af7;
+}
+
+.notification.normal {
+  border: 2px solid #7dcfff;
+}
