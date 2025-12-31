@@ -1,31 +1,33 @@
 My Fedora and hyprland config and random scripts
 
-## Software Used 
+## Software Used
 
 ### Base
 
-| Type               | Name                                                |
-| ------------------ | --------------------------------------------------- |
-|OS                  | [Fedora](https://fedoraproject.org/)                |
-| Window Compositor  | [Hyprland](https://hyprland.org/)                   |
-| Bar                | [Waybar](https://github.com/Alexays/Waybar)         |
-| Terminal           | [Kitty](https://github.com/kovidgoyal/kitty)        |
-| Shell              | fish                                                |
+| Type              | Name                                         |
+| ----------------- | -------------------------------------------- |
+| OS                | [Fedora](https://fedoraproject.org/)         |
+| Window Compositor | [Hyprland](https://hyprland.org/)            |
+| Bar               | [Waybar](https://github.com/Alexays/Waybar)  |
+| Terminal          | [Kitty](https://github.com/kovidgoyal/kitty) |
+| Shell             | fish                                         |
 
 ### Utilities
 
-| Type                               | Name                                                                             |
-| ---------------------------------- | -------------------------------------------------------------------------------- |
-| Wallpaper Backend                  | [SWWW](https://github.com/LGFae/swww)                                            |
-| Apps Launcher                      | [Rofi](https://github.com/davatorium/rofi)                                       |
-| System Info                        | [Fastfetch](https://github.com/fastfetch-cli/fastfetch)                          |
-| Notification Daemon                | [Sway Notification Center](https://github.com/ErikReider/SwayNotificationCenter) |
-| Lockscreen App                     | [Hyprlock](https://github.com/hyprwm/hyprlock)                                   |
-| Idle Daemon                        | [Hypridle](https://github.com/hyprwm/hypridle)                                   |
+| Type                | Name                                                                             |
+| ------------------- | -------------------------------------------------------------------------------- |
+| Text Editor         | [Neovim](https://neovim.io/)                                                     |
+| Wallpaper Backend   | [SWWW](https://github.com/LGFae/swww)                                            |
+| Apps Launcher       | [Rofi](https://github.com/davatorium/rofi)                                       |
+| System Info         | [Fastfetch](https://github.com/fastfetch-cli/fastfetch)                          |
+| Notification Daemon | [Sway Notification Center](https://github.com/ErikReider/SwayNotificationCenter) |
+| Lockscreen App      | [Hyprlock](https://github.com/hyprwm/hyprlock)                                   |
+| Idle Daemon         | [Hypridle](https://github.com/hyprwm/hypridle)                                   |
 
 ## Screenshots
 
 ### Home
+
 ![HOME](.assets/screenshots/home.png)
 
 ![makima](.assets/screenshots/makima.png)
@@ -36,18 +38,27 @@ My Fedora and hyprland config and random scripts
 
 ![tokyo](.assets/screenshots/tokyo.png)
 
+### Neovim
+
+![nvim](./.assets/screenshots/nvim.png)
+
+![nvim2](./.assets/screenshots/nvim2.png)
+
 ### Hyprlock
+
 ![LOCK](.assets/screenshots/lock.png)
 
 ### Rofi
+
 ![ROFI](.assets/screenshots/rofi.jpeg)
 
-### Swaync 
+### Swaync
+
 ![swaync](.assets/screenshots/swaync.png)
 
-### Waybar 
-![waybar](.assets/screenshots/waybar.png)
+### Waybar
 
+![waybar](.assets/screenshots/waybar.png)
 
 ## Credits
 
