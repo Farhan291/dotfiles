@@ -25,6 +25,20 @@ if status is-interactive # Commands to run in interactive sessions can go here
     # Aliases
     alias ls 'eza --icons'
     alias clear "printf '\033[2J\033[3J\033[1;1H'"
+    alias lg 'lazygit'
+    alias ssh_phone="ssh -p 8022 u0_a662@192.168.1.4"
+    alias gcc="/usr/bin/gcc -Wall -Wextra"
+    alias g++="/usr/bin/g++ -Wall -Wextra"
+    alias v="nvim"
+    alias ..='cd ..'
+    alias ...='cd ../..'
+    alias ....='cd ../../..'
+    alias .....='cd ../../../..'
+    alias ......='cd ../../../../..'
+    
+    # Fedora
+    alias up='sudo dnf upgrade'
+    alias i='sudo dnf install'
     
 end
 set -gx PATH $PATH /home/light/.dotnet/tools
