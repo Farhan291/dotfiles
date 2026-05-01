@@ -46,3 +46,6 @@ vim.keymap.set("n", "<leader>rd", function()
 	vim.cmd("w")
 	vim.cmd("!g++ % -DREZE -std=c++17 -O2 -Wall -o %:r.out && ./%:r.out")
 end, { desc = "Debug run (REZE)" })
+
+--yazi
+vim.keymap.set("n", "<leader>yy", ":Yazi<CR>")
