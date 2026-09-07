@@ -1,0 +1,27 @@
+include ~/.cache/wal/colors-kitty.conf
+
+background_opacity 0.88
+dynamic_background_opacity yes
+
+background_blur 32
+
+# Cursor settings for visibility
+cursor #ffffff
+cursor_text_color #000000
+
+# Selection colors for better visibility
+selection_foreground #000000
+selection_background #ffffff
+
+font_family	JetBrains Mono Nerd Font
+font_size 11.0
+cursor_shape beam
+cursor_trail 1
+window_margin_width 21.75
+confirm_os_window_close 0
+shell fish
+
+# Copy
+map ctrl+c    copy_or_interrupt
+
+

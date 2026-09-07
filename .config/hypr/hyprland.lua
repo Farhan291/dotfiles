@@ -1,4 +1,4 @@
--- Base template :  https://github.com/hyprwm/Hyprland/blob/main/example/hyprland.lua
+--- Base template from here https://github.com/hyprwm/Hyprland/blob/main/example/hyprland.lua
 
 ------------------
 ---- MONITORS ----
@@ -29,9 +29,12 @@ local wallpaper = "~/.config/rofi/scripts/wallpaper.sh"
 -------------------
 
 hl.on("hyprland.start", function()
+	hl.exec_cmd("dbus-update-activation-environment --systemd --all")
+	hl.exec_cmd("systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE DISPLAY")
+	hl.exec_cmd("systemctl --user start graphical-session.target")
 	hl.exec_cmd("nm-applet --indicator")
-	hl.exec_cmd("waybar & swww-daemon & hyprlidle & /usr/bin/lxpolkit")
-	hl.exec_cmd(" ssh-add ~/.ssh/id_ed25519_main")
+	hl.exec_cmd("waybar & swww-daemon & hyprlidle & /usr/bin/lxpolkit & qbittorrent")
+	hl.exec_cmd("ssh-add ~/.ssh/id_ed25519_main")
 end)
 
 -------------------------------
@@ -335,4 +338,12 @@ hl.window_rule({
 		pin = false,
 	},
 	no_focus = true,
+})
+
+hl.window_rule({
+	name = "termfilechooser-float",
+	match = { title = "termfilechooser" },
+	float = true,
+	size = { 1000, 650 },
+	center = true,
 })

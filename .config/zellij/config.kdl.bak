@@ -1,6 +1,3 @@
-//
-//
-
 keybinds clear-defaults=true {
     locked {
         bind "Ctrl g" { SwitchToMode "normal"; }
@@ -173,7 +170,7 @@ keybinds clear-defaults=true {
         bind "Ctrl o" { SwitchToMode "session"; }
     }
     shared_except "locked" "scroll" "search" "tmux" {
-        bind "Ctrl z" { SwitchToMode "tmux"; }
+        bind "Ctrl b" { SwitchToMode "tmux"; }
     }
     shared_except "locked" "scroll" "search" {
         bind "Ctrl s" { SwitchToMode "scroll"; }
@@ -241,7 +238,7 @@ keybinds clear-defaults=true {
         bind "%" { NewPane "right"; SwitchToMode "normal"; }
         bind "," { SwitchToMode "renametab"; }
         bind "[" { SwitchToMode "scroll"; }
-        bind "Ctrl z" { Write 2; SwitchToMode "normal"; }
+        bind "Ctrl b" { Write 2; SwitchToMode "normal"; }
         bind "c" { NewTab; SwitchToMode "normal"; }
         bind "h" { MoveFocus "left"; SwitchToMode "normal"; }
         bind "j" { MoveFocus "down"; SwitchToMode "normal"; }
@@ -269,7 +266,7 @@ plugins {
     strider location="zellij:strider"
     tab-bar location="zellij:tab-bar"
     welcome-screen location="zellij:session-manager" {
-        welcome_screen false
+        welcome_screen true
     }
 }
 
@@ -288,7 +285,7 @@ web_client {
 //   - true
 //   - false (Default)
 // 
-simplified_ui false
+// simplified_ui true
  
 // Enable OSC8 hyperlink output
 // Options:
@@ -300,20 +297,8 @@ simplified_ui false
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-theme "catppuccin-mocha" 
-catppuccin-mocha {
-        fg "#cdd6f4"
-        bg "#1e1e2e"
-        black "#45475a"
-        red "#f38ba8"
-        green "#a6e3a1"
-        yellow "#f9e2af"
-        blue "#89b4fa"
-        magenta "#cba6f7"
-        cyan "#94e2d5"
-        white "#bac2de"
-        orange "#fab387"
-    }
+// theme "dracula"
+ 
 // Theme to use when the host terminal reports a dark color palette.
 // Requires `theme_light` to also be set; otherwise `theme` is used.
 // 
@@ -332,7 +317,7 @@ catppuccin-mocha {
 // Choose the path to the default shell that zellij will use for opening new panes
 // Default: $SHELL
 // 
-default_shell "fish"
+// default_shell "fish"
  
 // Choose the path to override cwd that zellij will use for opening new panes
 // 
@@ -341,10 +326,7 @@ default_shell "fish"
 // The name of the default layout to load on startup
 // Default: "default"
 // 
- default_layout "minimal"
- session_name "-"
-
-
+// default_layout "compact"
  
 // The folder in which Zellij will look for layouts
 // (Requires restart)
@@ -546,7 +528,7 @@ default_shell "fish"
 // Whether to show tips on startup
 // Default: true
 // 
-show_startup_tips false
+// show_startup_tips false
  
 // Whether to show release notes on first version run
 // Default: true

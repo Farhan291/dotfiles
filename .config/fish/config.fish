@@ -1,3 +1,6 @@
+set -gx EDITOR nvim
+set -gx VISUAL nvim
+
 # --- Auto-start SSH agent ---
 if not set -q SSH_AUTH_SOCK
     eval (ssh-agent -c)
@@ -27,14 +30,17 @@ if status is-interactive # Commands to run in interactive sessions can go here
     alias clear "printf '\033[2J\033[3J\033[1;1H'"
     alias lg 'lazygit'
     alias ssh_phone="ssh -p 8022 u0_a662@192.168.1.4"
-    alias gcc="/usr/bin/gcc -Wall -Wextra"
-    alias g++="/usr/bin/g++ -Wall -Wextra"
+    alias gcc="/usr/bin/gcc -O2 -Wall -Wextra"
+    alias g++="/usr/bin/g++ -O2 -Wall -Wextra"
     alias v="nvim"
     alias ..='cd ..'
     alias ...='cd ../..'
     alias ....='cd ../../..'
     alias .....='cd ../../../..'
     alias ......='cd ../../../../..'
+    alias sysd='systemd-manager-tui'
+    alias ping='ping google.com'
+    alias pingip= 'ping 8.8.8.8'
     
     # Fedora
     alias up='sudo dnf upgrade'
@@ -72,3 +78,7 @@ set -gx PATH $HOME/gems/bin $PATH
 set -U fish_user_paths $fish_user_paths ~/.opencode/bin
 set --export BUN_INSTALL "$HOME/.bun"
 fish_add_path $BUN_INSTALL/bin
+
+#odin 
+set -gx ODIN_ROOT $HOME/.local/odin 
+set -gx PATH $ODIN_ROOT $PATH

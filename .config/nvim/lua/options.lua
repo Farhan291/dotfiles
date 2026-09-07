@@ -7,7 +7,7 @@ vim.opt.smartcase = true -- unless capital letter in search
 
 vim.opt.termguicolors = true -- enable true color support
 
-vim.cmd("colorscheme rose-pine-moon") -- set color theme
+vim.cmd("colorscheme gruvbox") -- set color theme
 require("bufferline").setup({}) -- bufferline
 
 vim.opt.tabstop = 4

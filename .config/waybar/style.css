@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 0;
-    /*font-family: Roboto, Helvetica, Arial, sans-serif;*/ 
+    /*font-family: Roboto, Helvetica, Arial, sans-serif;*/
     font-family: "JetBrains Mono Nerd Font";
     font-size: 13px;
     min-height: 0;
@@ -14,11 +14,11 @@ window#waybar {
 }
 
 tooltip {
-  background: rgba(43, 48, 59, 0.5);
-  border: 1px solid rgba(100, 114, 125, 0.5);
+    background: rgba(43, 48, 59, 0.5);
+    border: 1px solid rgba(100, 114, 125, 0.5);
 }
 tooltip label {
-  color: white;
+    color: white;
 }
 
 #workspaces button {
@@ -29,33 +29,47 @@ tooltip label {
 }
 
 #workspaces button.active {
-    background: #64727D;
+    background: #64727d;
     border-bottom: 3px solid white;
 }
 
-#mode, #clock, #battery, #network, #pulseaudio {
+#mode,
+#clock,
+#battery,
+#network,
+#pulseaudio,
+#cpu,
+#memory {
     padding: 7px 10px;
 }
 
 #mode {
-    background: #64727D;
+    background: #64727d;
     border-bottom: 3px solid white;
 }
 #clock {
-    background-color: #64727D;
+    background-color: #64727d;
 }
 
 #battery {
-    background-color: #27F5A3;
+    background-color: #27f5a3;
     color: black;
 }
 
 #battery.charging {
     color: white;
-    background-color: #26A65B;
+    background-color: #26a65b;
 }
-#network{
-    background-color: #A627F5;
+#network {
+    background-color: #a627f5;
+}
+
+#cpu {
+    color: white;
+}
+
+#memory {
+    color: white;
 }
 @keyframes blink {
     to {
